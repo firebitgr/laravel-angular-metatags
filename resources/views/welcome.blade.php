@@ -78,6 +78,7 @@
             @endif
 
             <div class="content">
+                <app-root style="border: 2px solid red; padding: 10px; display: block">Loading...</app-root>
                 <div class="title m-b-md">
                     Laravel
                 </div>

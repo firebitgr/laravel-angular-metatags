@@ -94,7 +94,6 @@
         </div>
 
         <!-- angular -->
-        <app-root style="border: 2px solid red; padding: 10px; display: block">Loading...</app-root>
         <script type="text/javascript" src="/ng/inline.bundle.js"></script><script type="text/javascript" src="/ng/polyfills.bundle.js"></script><script type="text/javascript" src="/ng/styles.bundle.js"></script><script type="text/javascript" src="/ng/vendor.bundle.js"></script><script type="text/javascript" src="/ng/main.bundle.js"></script>
         <!-- angular end-->
     </body>

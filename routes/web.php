@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('first', function () {
+	$ogTitle = 'first title';
+    return view('welcome', ['ogTitle' => $ogTitle]);
+});
+
+Route::get('second/{id}', function ($id) {
+	$ogTitle = 'second title';
+    return view('welcome', ['ogTitle' => $ogTitle]);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

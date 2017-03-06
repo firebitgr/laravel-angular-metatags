@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('first', function (Request $request) {
+    return \App\User::all();
+});
+
+Route::middleware('auth:api')->get('/second/{user}', function (Request $request ,App\User $user) {
+    return $user;
+});

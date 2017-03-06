@@ -1,3 +1,7 @@
 <p>
   first works!
 </p>
+
+<div *ngFor='let user of users | async'>
+	{{user.name}} -- {{user.email}}
+</div>

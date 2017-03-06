@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('first', function (Request $request) {
-    return \App\User::all();
+    return \App\User::limit(3)->get();
 });
 
 Route::middleware('auth:api')->get('/second/{user}', function (Request $request ,App\User $user) {

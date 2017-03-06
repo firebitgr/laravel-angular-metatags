@@ -96,5 +96,6 @@
         <!-- angular -->
         <script type="text/javascript" src="/ng/inline.bundle.js"></script><script type="text/javascript" src="/ng/polyfills.bundle.js"></script><script type="text/javascript" src="/ng/styles.bundle.js"></script><script type="text/javascript" src="/ng/vendor.bundle.js"></script><script type="text/javascript" src="/ng/main.bundle.js"></script>
         <!-- angular end-->
+        <div data-api-token="{{ !empty(Auth::user()) ? Auth::user()->api_token : null }}"></div>
     </body>
 </html>
